@@ -59,7 +59,7 @@ export async function getStaticPaths() {
         params: { articleId: data.id }
     }));
     
-    return { paths, fallback: true }
+    return { paths, fallback: false }
 }
 
 // This gets called at build time [ PART OF SSG ] 
